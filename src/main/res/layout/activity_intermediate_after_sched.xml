@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    tools:context=".workoutModule.intermediateAfterSched">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/skyblue"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/textReminder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:padding="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Your Calisthenic Workout Routine for Intermediate is currently in Progress"/>
+
+        <LinearLayout
+            android:layout_below="@id/textReminder"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@color/skyblue"
+            android:layout_margin="16dp">
+
+
+            <TextView
+                android:id="@+id/resetWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/dialog_custom_before_press_white"
+                android:padding="10dp"
+                android:text="Reset"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/buttonQuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/dialog_custom_before_press_white"
+                android:padding="10dp"
+                android:text="Quit"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/buttonBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/dialog_custom_before_press_white"
+                android:padding="10dp"
+                android:text="Back"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

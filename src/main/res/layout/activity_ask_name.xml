@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/skyblue"
+    android:layout_height="match_parent"
+    tools:context=".inputDetails.AskName">
+
+
+
+
+
+
+  <TextView
+      android:id="@+id/textName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="148dp"
+      android:gravity="center"
+      android:text="What do we call you ? "
+      android:textColor="@color/black"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/inputNameId"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="25dp"
+      android:layout_marginTop="208dp"
+      android:layout_marginRight="25dp"
+      android:background="@drawable/white_borderradius_withstroke"
+      android:gravity="center"
+      android:hint=" Your Name"
+      android:padding="15dp"
+      android:textColor="@color/black"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:maxLines="1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <LinearLayout
+      android:id="@+id/nextBtnName"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginBottom="30dp"
+      android:layout_marginEnd="30dp"
+      android:background="@drawable/rounded_border_background"
+      android:gravity="center"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintVertical_bias="1.0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+
+
+        />
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

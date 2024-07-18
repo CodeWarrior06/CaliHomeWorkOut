@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    android:layout_margin="0dp"
+    tools:context=".inputDetails.AskGenderActivity">
+
+    <!--back button-->
+    <LinearLayout
+        android:id="@+id/askGenderBckBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/backbtn_shape"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/backarrowlogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:background="@drawable/ic_launcher_foreground"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <!--Ask Gender-->
+    <TextView
+        android:id="@+id/askGender"
+        android:layout_width="291dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="105dp"
+        android:gravity="center"
+        android:text="@string/what_s_your_gender"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Let us know u bettter-->
+
+
+    <TextView
+        android:id="@+id/askGender2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="-50dp"
+        android:gravity="center"
+
+        android:text="@string/belowAskGender"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askGender" />
+
+    <!--container of gender-->
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askGender">
+
+        <!--Malee Button-->
+
+        <!--Femalee Button-->
+
+        <LinearLayout
+            android:id="@+id/maleOptId"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/rounded_nostroke_border_background">
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="18dp"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="-90dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/maleicon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/femaleOptId"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/rounded_nostroke_border_background">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="-90dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/femaleicon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Button-->
+    <LinearLayout
+        android:id="@+id/nextBtnGender"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_border_background"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

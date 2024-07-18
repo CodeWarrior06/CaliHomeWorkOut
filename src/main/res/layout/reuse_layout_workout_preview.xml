@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    >
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:text="Chest Workouts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        >
+
+        <TextView
+            android:id="@+id/categoryText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/lightskyblue_borderradius_10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="BEGINNER"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+
+
+
+        <TextView
+            android:id="@+id/categoryText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lightskyblue_borderradius_10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="CHEST"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/workoutDescription"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Working out your arms as many benefits. It can increase your muscle strength, muscle tone, and lean muscle mass. It can also reduce your risk of injury, improve your posture your bones, and stabilize your joints."
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/letStartText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:text="Lets start with Warm Ups"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </TextView>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="210dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/warmup1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/darkmossgreen_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/darkmossgreen_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/darkmossgreen_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup4"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/darkmossgreen_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView android:id="@+id/warmup5"
+
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/darkmossgreen_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup6"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/darkmossgreen_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Workouts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="300dp"
+
+        >
+
+    </TextView>
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_marginTop="335dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/workout1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/lightskyblue"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Declined Push Up 12-15 reps"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/workout2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/lightskyblue"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Inclined Diamond Push Ups 12-15 reps"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/workout3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/lightskyblue"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Archer Push Ups 8-12 Reps"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/workout4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/lightskyblue"
+                android:gravity="center"
+                android:text="Reverse Dips 5-10 reps"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/startWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="130dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/red_borderradius_10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Start"
+                >
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/lightskyblue">
+        <!--1st Grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:rowCount="1"
+            android:columnCount="5">
+
+            <GridLayout
+                android:id="@+id/gridRoutineId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/lightskyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_gravity="fill"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/routine_imageasset_round">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:text="Routine"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+            <!--2nd Grid-->
+            <GridLayout
+                android:id="@+id/gridWorkoutId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/lightskyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_gravity="fill"
+
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/workout1imageasset">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:text="Workouts"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+            <!--3rd Grid-->
+            <GridLayout
+                android:id="@+id/gridNutritionId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/lightskyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="fill"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/nutrition_imageasset_round">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:text="Nutrition"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+
+
+            </GridLayout>
+
+            <!--4th Grid-->
+            <GridLayout
+                android:id="@+id/gridMacrosId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/lightskyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="fill"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/macros1_imageasset_round">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:text="Macro's"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+            <!--5th Grid-->
+
+            <GridLayout
+                android:id="@+id/gridProfileId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/lightskyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/profile_imageasset_round">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+        </GridLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

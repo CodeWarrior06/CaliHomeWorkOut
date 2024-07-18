@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/workout_selector">
+
+
+    <LinearLayout
+        android:id="@+id/containerWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="-350dp"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/workoutContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightskyblue"
+                android:orientation="horizontal"
+                >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="0dp"
+                android:background="@drawable/inclinepushup">
+            </ImageView>
+
+                <TextView
+                    android:id="@+id/beginnerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:text="Beginners Workout
+                    Day 1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

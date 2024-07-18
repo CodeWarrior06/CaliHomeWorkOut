@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/skyblue"
+    android:id="@+id/thankyou_stretching"
+    android:layout_height="match_parent">
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/skyblue"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/stretchDoneTextCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/white_borderradius_withstroke"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Light Cardio is Done"
+                android:textAlignment="center"
+                android:textColor="@color/lightred"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stretchDoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Now that you've gotten your muscles loose and prepared, it's time to jump into your calisthenics workout.  Remember to focus on proper form throughout each exercise to maximize your results and avoid injury. "
+                android:textColor="@color/black"
+
+                android:textSize="15sp"
+                tools:ignore="TextSizeCheck">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/nextBtnStretching"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/red_borderradius_10dp"
+            android:padding="15dp"
+            android:layout_below="@id/stretchDoneTextCont"
+            android:text="Ready to crush your workout? Let's go!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="italic"
+
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

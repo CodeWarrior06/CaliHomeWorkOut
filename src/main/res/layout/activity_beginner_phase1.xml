@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".beginner.BeginnerPhase1">
+
+
+    <TextView
+        android:id="@+id/workoutTitle"
+        android:text="Beginner Calisthenic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        >
+
+        <TextView
+            android:id="@+id/categoryText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/whitebackground_borderradius"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="Push"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+
+
+
+        <TextView
+            android:id="@+id/categoryText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebackground_borderradius"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="Pull"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/pushPullDescription"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By doing push movements on one day and pull movements on another, you ensure you're using different muscle groups, which allows the other muscles to properly recover. This means you can train each muscle group more often"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/warmUpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pushPullDescription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:text="Lets Start Warm Up"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollbarStretching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:scrollbars="none"
+        android:layout_below="@id/warmUpText"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/warmup1"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup4"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup5"
+
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup6"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup7"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup8"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/warmup9"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Side Bend"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/lightCardioText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollbarStretching"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Light Cardio"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollBarLightCardio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginRight="20dp"
+
+       android:layout_below="@id/lightCardioText"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:gravity="top">
+
+
+            <TextView
+                android:id="@+id/lightCardio1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Butt Kicks"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/lightCardio2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="High Knees"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/lightCardio3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Jogging"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/lightCardio4"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Jumping Jacks"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/lightCardio5"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Jumping Ropes"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/workoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollBarLightCardio"
+        android:layout_margin="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Workouts"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollbarWorkout1"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/workoutText"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/workout1"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:layout_height="80dp"
+                android:text="Knee Push Up 10 -15 reps ( 3 - set ) "
+
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/workout2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Dead Hangs 20 - 30 sec ( 3 - set )"
+
+                android:textColor="#000000">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/workout3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Dead Hangs 20 - 30 sec ( 3 - set )"
+
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/workout4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Dead Hangs 20 - 30 sec ( 3 - set )"
+
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/workout5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Dead Hangs 20 - 30 sec ( 3 - set )"
+                android:background="@drawable/whitebackground_borderradius"
+                android:textColor="#000000">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/workout6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/whitebackground_borderradius"
+                android:gravity="center"
+                android:text="Dead Hangs 20 - 30 sec ( 3 - set )"
+
+                android:textColor="#000000">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/startWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/red_borderradius_10dp"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/scrollbarWorkout1"
+                android:textStyle="bold"
+                android:text="Start"
+                >
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

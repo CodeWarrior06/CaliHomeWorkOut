@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/skyblue"
+    android:id="@+id/beginnerPhase1ScrollBar"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- First container with 30% height -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.90"
+                android:layout_weight="0.4">
+                <LinearLayout
+                    android:id="@+id/includedimageCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/white_borderradius_withstroke"
+
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/imageReuse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="0.7"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/manrunning" />
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Stretching"
+                        android:textSize="30sp"
+                        android:layout_margin="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Content of the first container -->
+
+
+            <!-- Second container with 70% height -->
+            <!-- First container with 30% height -->
+            <LinearLayout
+                android:id="@+id/countdownCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_weight="0.3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+                    android:background="@drawable/warmup_whitebackground_borderadius20">
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/timeCountdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+
+                                    android:text="30s"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/black"
+                                    android:textSize="55dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="TextSizeCheck">
+
+                                </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/timeCountdown"
+                            android:layout_marginTop="50dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/resumeBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/yellow_button_background_pressed"
+                                android:padding="10dp"
+                                android:text="Resume"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="10dp"
+                                tools:ignore="TextSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/nextBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/green_button_background_pressed"
+                                android:padding="10dp"
+                                android:text="Next"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                tools:ignore="TextSizeCheck" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:background="@color/green"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

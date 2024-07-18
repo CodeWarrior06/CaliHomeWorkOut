@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/skyblue"
+    android:padding="16dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="textViewClicked"
+                android:padding="70dp"
+                android:text="TextView 1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:padding="70dp"
+                        android:background="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView 2"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:onClick="textViewClicked"
+                        tools:ignore="TextContrastCheck"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:padding="70dp"
+                        android:background="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView 3"
+                        android:textSize="18sp"
+                        android:onClick="textViewClicked"
+                        tools:ignore="TextContrastCheck"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:padding="70dp"
+                        android:background="@color/white"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView 4"
+
+                        android:textSize="18sp"
+                        android:onClick="textViewClicked" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:padding="70dp"
+                        android:background="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="TextView 5"
+                        android:textSize="28sp"
+                        android:onClick="textViewClicked" />
+
+
+                        <TextView
+                            android:id="@+id/button123"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:text="Next"
+                            android:background="@color/lightred"
+
+                            >
+                        </TextView>
+        </LinearLayout>
+
+</ScrollView>

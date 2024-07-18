@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CaliHomeWorkOut</string>
+    <string name="no_data">Not Signed In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">SignIn</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="emailRegister">Email</string>
+    <string name="etHint_EmailRegister">Email</string>
+    <string name="passwordRegister">Password</string>
+    <string name="etHint_PassRegister">Password</string>
+    <string name="btnText_Register">Register</string>
+    <string name="tvHint_TextAskAcc">Already have an Account?</string>
+    <string name="tvHint_TextLogin">Login</string>
+    <string name="tvText_TextCali">CaliHomeWorkOut</string>
+    <string name="tvHint_TextCreateAcc">Create Account</string>
+    <string name="tvId_TextAskAccCreate">Dont have account?</string>
+    <string name="loginBtn">Login</string>
+
+    <string name="userDetails">Email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+
+
+    <string name="emailLogin">Email</string>
+    <string name="passwordLogin">Password</string>
+    <string name="what_s_your_gender">What\'s your Gender?</string>
+    <string name="belowAskGender">Let us know your better</string>
+
+    <string name="firstSet">1 of 3 sets</string>
+    <string name="secondSet">2 of 3 sets</string>
+    <string name="thirdSet">3 of 3 sets</string>
+    <!--Register and Sign in Page Up-->
+
+
+</resources>

@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="25dp" /> <!-- Adjust the radius as needed -->
+    <solid android:color="@color/white" />
+    <stroke android:color="@color/darkergreen"
+        android:width="5dp"/>
+    <!-- No stroke for the pressed state -->
+</shape>

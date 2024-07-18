@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".MacrosPg">
+
+    <!--back button-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:id="@+id/textContainer"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/macronutrientText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0sp"
+            android:text="MACRONUTRIENT"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATOR"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+    <!-- THe output of macros-->
+
+    <!--Border TOp BLACk-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/firstContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebackground_borderradius_20px"
+                android:padding="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="LOSE WEIGHT"
+                            android:textSize="13dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck"></TextView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/lightred"
+                            app:cardCornerRadius="20dp"
+                            app:contentPadding="15dp">
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/black"
+                            android:text="MAINTAIN WEIGHT"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck"></TextView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/darkergreen"
+                            app:cardCornerRadius="20dp"
+                            app:contentPadding="15dp">
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="GAIN WEIGHT"
+                            android:textSize="13dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck">
+
+                        </TextView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/yellow"
+                            app:cardCornerRadius="20dp"
+                            app:contentPadding="15dp">
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--age -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebackground_borderradius_20px"
+                android:orientation="horizontal"
+                android:padding="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="AGE"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ageET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackground_noborderradius_stroke"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--GENDER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebackground_borderradius_20px"
+                android:orientation="horizontal"
+                android:padding="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GENDER"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/dropBarGender"
+                    android:layout_width="140dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/whitebackground_noborderradius_stroke"
+                    android:padding="3sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebackground_borderradius_20px"
+                android:orientation="horizontal"
+                android:padding="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HEIGHT (Cm)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/heightET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/whitebackground_noborderradius_stroke"
+                    android:inputType="numberDecimal"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <!--WEIGHT-->
+
+
+            <!--ACTIVITY  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebackground_borderradius_20px"
+                android:orientation="horizontal"
+                android:padding="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="WEIGHT (Kg)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+
+                    android:id="@+id/weightET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/whitebackground_noborderradius_stroke"
+                    android:inputType="numberDecimal"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebackground_borderradius_20px"
+                android:orientation="horizontal"
+                android:padding="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ACTIVITY"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/dropBarActFactor"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/whitebackground_noborderradius_stroke"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/macrosCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/lightred_macrosborderradius"
+                android:padding="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULATE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/lightskyblue_macros_borderradius"
+                android:padding="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/navbar_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/navbar_container"
+
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/navbar_container">
+
+    </LinearLayout>
+    <!--NAVBAR BOTTOm-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/skyblue">
+        <!--1st Grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:rowCount="1"
+            android:columnCount="5">
+
+            <GridLayout
+                android:id="@+id/gridRoutineId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="1dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/routineImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/routine_black_100dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/routineTV"
+                    android:text="Routine"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+            <!--2nd Grid-->
+            <GridLayout
+                android:id="@+id/gridWorkoutId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2"
+                >
+                <ImageView
+                    android:id="@+id/workoutImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:background="@color/skyblue"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/workout_black_dumbbell100_foreground"/>
+
+                <TextView
+
+                    android:id="@+id/workoutTV"
+                    android:text="Workout"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@color/skyblue"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+            <!--3rd Grid-->
+            <GridLayout
+                android:id="@+id/gridNutritionId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/nutritionImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:background="@color/skyblue"
+                    android:src="@mipmap/nutrition_black_100dp"/>
+
+                <TextView
+                    android:id="@+id/nutritionTV"
+                    android:text="Nutrition"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+
+
+            </GridLayout>
+
+            <!--4th Grid-->
+            <GridLayout
+                android:id="@+id/gridMacrosId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/macrosImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:background="@color/skyblue"
+                    android:src="@mipmap/macros_white_100dp"/>
+
+                <TextView
+                    android:id="@+id/macrosTV"
+                    android:text="Macro's"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+            <!--5th Grid-->
+
+            <GridLayout
+                android:id="@+id/gridProfileId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/profileImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:background="@color/skyblue"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/profile_black_100dp"/>
+
+                <TextView
+                    android:id="@+id/profileTV"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@color/skyblue"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+
+
+
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

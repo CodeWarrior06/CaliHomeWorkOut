@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/skyblue"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/workoutList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:paddingLeft="-10dp"
+        android:background="@color/skyblue"
+        android:minHeight="100dp"
+
+        >
+        <ScrollView
+            android:id="@+id/scrollViewBeginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Container 1 Start -->
+                <LinearLayout
+                    android:id="@+id/mondayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/mondayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Monday"/>
+                    <LinearLayout
+                        android:id="@+id/mondayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <!--added from wowrkout selector-->
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/inclinepushup"
+                            android:scaleType="fitXY">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/mondayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Push &amp; Pull Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold">
+                        </TextView>
+                        <!--added from wowrkout selector-->
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 1 End -->
+
+
+
+
+                <!--Container 2 Start -->
+                <LinearLayout
+                    android:id="@+id/tuesdayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tuesdayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Tuesday"/>
+                    <LinearLayout
+                        android:id="@+id/tuesdayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rest_workout">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tuesdayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Rest Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 2 End -->
+
+                <!--Container 3 Start -->
+                <LinearLayout
+                    android:id="@+id/wednesdayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/wednesdayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Wednesday"/>
+                    <LinearLayout
+                        android:id="@+id/wednesdayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/inclinepushup">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/wednesdayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Push &amp; Pull Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 3 End -->
+
+
+
+                <!--Container 4 Start -->
+                <LinearLayout
+                    android:id="@+id/thursdayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/thursdayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Thursday"/>
+                    <LinearLayout
+                        android:id="@+id/thursdayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/leg_workout"
+                            android:scaleType="fitXY">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/thursdayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Legs &amp; Core Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 4 End -->
+
+
+
+
+
+                <!--Container 5 Start -->
+                <LinearLayout
+                    android:id="@+id/fridayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/fridayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Friday"/>
+                    <LinearLayout
+                        android:id="@+id/fridayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/inclinepushup"
+                            android:scaleType="fitXY">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/fridayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Push &amp; Pull Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 5 End -->
+
+
+
+                <!--Container 6 Start -->
+                <LinearLayout
+                    android:id="@+id/saturdayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/saturdayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Saturday"/>
+                    <LinearLayout
+                        android:id="@+id/saturdayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rest_workout"
+                            android:scaleType="fitXY">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/saturdayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Rest Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 6 End -->
+
+
+                <!--Container 7 Start -->
+                <LinearLayout
+                    android:id="@+id/sundayWorkoutCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="500dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/sundayDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sunday"/>
+                    <LinearLayout
+                        android:id="@+id/sundayWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/whitebackground_borderradius"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/inclinepushup"
+                            android:scaleType="fitXY">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/sundayWorkoutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="Push &amp; Pull Day Calisthenics"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Container 7 End -->
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

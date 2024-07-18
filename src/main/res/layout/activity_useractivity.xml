@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".useractivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foodImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImage"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+
+
+    <TextView
+        android:id="@id/foodGram"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodName"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@id/foodCalorie"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodGram"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@id/foodProtein"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodCalorie"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@id/foodFat"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodProtein"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@id/foodCarb"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodFat"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+
+
+</RelativeLayout>

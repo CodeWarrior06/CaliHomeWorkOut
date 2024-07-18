@@ -1,0 +1,621 @@
+<!-- activity_dashboard.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".Dashboard">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Routine with Image Start-->
+    <LinearLayout
+        android:id="@+id/dailyWorkoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/calistheniclogoapp_round"/>
+
+        <TextView
+            android:id="@+id/currentLevelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Daily Workout"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            />
+
+    </LinearLayout>
+    <!--Routine with Image End-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--Workout Weekly Circle Start-->
+    <RelativeLayout
+        android:id="@+id/currentWeekAndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dailyWorkoutText"
+
+        >
+        <LinearLayout
+            android:id="@+id/currentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/currentDateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Date Current"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:rowCount="1"
+            android:columnCount="7"
+            android:layout_below="@id/currentDate"
+            >
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/mondayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="M"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tuesdayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="T"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/wednesdayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="W"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/thursdayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="Th"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/fridayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="F"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/saturdayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="Sat"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/sundayTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:text="Sun"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+        </GridLayout>
+
+    </RelativeLayout>
+    <!--Workout Weekly Circle End-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/currentWeekAndDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+            <LinearLayout
+                android:id="@+id/todaysWorkoutText"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Today's Workout"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--INSERT NEW UI-->
+
+        <ScrollView
+            android:layout_below="@id/todaysWorkoutText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dsdsdsdsdsds"/>
+        </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+
+
+    <!--INSERT NEW UI END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--WorkoutList-->
+    <!--ScrollView-->
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/todaysWorkoutText">
+
+    </ScrollView>->
+    -->
+
+
+
+
+
+
+
+    <!--ScrollView-->
+    <!--WorkoutList-->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/navbar_container">
+
+    </LinearLayout>
+    <!--NAVBAR BOTTOm-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/skyblue">
+        <!--1st Grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:rowCount="1"
+            android:columnCount="5">
+
+            <GridLayout
+                android:id="@+id/gridRoutineId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="1dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/routineImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/routine_white_100dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/routineTV"
+                    android:text="Routine"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+            <!--2nd Grid-->
+            <GridLayout
+                android:id="@+id/gridWorkoutId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2"
+                >
+                <ImageView
+                    android:id="@+id/workoutImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/workout_black_dumbbell100_foreground"/>
+
+                <TextView
+
+                    android:id="@+id/workoutTV"
+                    android:text="Workout"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@color/skyblue"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+            <!--3rd Grid-->
+            <GridLayout
+                android:id="@+id/gridNutritionId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/nutritionImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:background="@color/skyblue"
+                    android:src="@mipmap/nutrition_black_100dp"/>
+
+                <TextView
+                    android:id="@+id/nutritionTV"
+                    android:text="Nutrition"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+
+
+            </GridLayout>
+
+            <!--4th Grid-->
+            <GridLayout
+                android:id="@+id/gridMacrosId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/macrosImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:background="@color/skyblue"
+                    android:src="@mipmap/macros_black_100dp"/>
+
+                <TextView
+                    android:id="@+id/macrosTV"
+                    android:text="Macro's"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+            <!--5th Grid-->
+
+            <GridLayout
+                android:id="@+id/gridProfileId"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="2dp"
+                android:background="@color/skyblue"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/profileImg"
+                    android:layout_height="16dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="3"
+                    android:background="@color/skyblue"
+                    android:layout_columnWeight="3"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/profile_black_100dp"/>
+
+                <TextView
+                    android:id="@+id/profileTV"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@color/skyblue"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_gravity="fill">
+
+                </TextView>
+            </GridLayout>
+
+
+
+
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

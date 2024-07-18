@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".editProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="5dp"
+        android:background="@drawable/whitebackground_borderradius"
+        app:layout_constraintBottom_toTopOf="@+id/personalDetailContainer"
+        android:layout_marginBottom="26dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--personal details-->
+    <LinearLayout
+        android:id="@+id/personalDetailContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:layout_marginBottom="185dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:background="@drawable/whitebackground_borderradius">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="Name: "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/nameDetailId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+
+                android:gravity="center"
+
+                android:maxLines="1"
+                android:maxLength="9"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+            </EditText>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <!--Age detail-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Age: "
+
+                android:textColor="@color/black"
+                android:paddingLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/ageDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+            </EditText>
+        </LinearLayout>
+
+        <!--GENDER detail-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="Gender: "
+                android:textColor="@color/black"
+
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/genderDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck">
+
+
+            </Spinner>
+        </LinearLayout>
+
+        <!--HEIGHT detail-->
+
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Height(cm) : "
+                android:textColor="@color/black"
+                android:paddingLeft="30dp"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/heightDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+            </EditText>
+        </LinearLayout>
+
+        <!--WEIGHT detail-->
+
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <!--weight detail-->
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Weight(kg) : "
+
+                android:paddingLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/weightDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+                android:gravity="center"
+                android:hint=""
+                android:maxLength="6"
+                android:inputType="numberDecimal"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+            </EditText>
+        </LinearLayout>
+
+        <!--ACTIVITY LEVELL detail-->
+
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Activity Level: "
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerActFactor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck">
+
+
+            </Spinner>
+        </LinearLayout>
+
+        <!--BMI GRADE detail-->
+
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="BMI Grade: "
+                android:textColor="@color/black"
+                android:paddingLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/bmiGradeDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle"
+                android:gravity="center"
+                android:text="N/A"
+                android:textColor="@color/black"
+                android:textSize="13sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <!--BMI detail-->
+
+        <LinearLayout
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Nutrition Status: "
+                android:textColor="@color/black"
+                android:paddingLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/bmiDetail"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="N/A"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/skyblue_topbotsquare_leftrightcircle">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--Personal detail end container-->
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/optionContainer"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/personalDetailContainer"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_height="70dp">
+
+
+        <LinearLayout
+            android:id="@+id/saveBtnId"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_nostroke_border_background"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:gravity="center"
+
+                android:text="Save"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cancelBtnId"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_nostroke_border_background"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+            </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/inter_medium</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/montserrat_alternates_extralight</item>
+        <item>@font/montserrat_alternates_italic</item>
+        <item>@font/montserrat_alternates_light</item>
+        <item>@font/montserrat_alternates_medium</item>
+        <item>@font/montserrat_alternates_semibold</item>
+        <item>@font/montserrat_alternates_semibold_italic</item>
+        <item>@font/montserrat_alternates_thin</item>
+        <item>@font/montserrat_alternates_thin_italic</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/montserrat_thin</item>
+        <item>@font/playfair_display</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_mono</item>
+        <item>@font/roboto_mono_medium</item>
+        <item>@font/roboto_slab_thin</item>
+    </array>
+</resources>

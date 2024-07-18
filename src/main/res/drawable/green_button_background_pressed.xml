@@ -1,0 +1,13 @@
+<!-- res/drawable/custom_button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Default state, no click -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Adjust the radius as needed -->
+            <solid android:color="@color/green"/>
+            <stroke
+                android:width="2dp"/> <!-- Adjust the stroke width as needed -->
+
+        </shape>
+    </item>
+</selector>

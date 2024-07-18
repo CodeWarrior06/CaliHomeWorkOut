@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".beginner.beginnerWorkoutDone">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:layout_height="250dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/doneworkoutlanscape"
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/greetWorkoutDone1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Great job!! "
+                            android:textSize="28dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:background="@color/lightred"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textAlignment="center"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/greetWorkoutDone2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:background="@color/lightred"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingBottom="10dp"
+                            android:text="Congrats, On crushing your workout for today! "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+
+
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/warmup_whitebackground_borderadius20"
+                        android:id="@+id/askDoneWorkout">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Do you want to improve your workout for the Next Routine?"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="28dp"
+                            android:paddingBottom="30dp"
+
+                          android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="20dp"
+
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/yesBtn"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Yes, I want to improve the next workout "
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+
+                                android:textSize="12sp"/>
+
+                            <Button
+                                android:layout_weight="1"
+                                android:id="@+id/noBtn"
+                                android:layout_width="0dp"
+                                android:textAllCaps="false"
+                                android:layout_height="match_parent"
+                                android:text="No, this workout is still hard for me"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="sans-serif-condensed"
+
+                                android:textSize="12sp"/>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

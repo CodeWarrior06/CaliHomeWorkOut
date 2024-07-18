@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/calistheniclogoapp_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/calistheniclogoapp_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Firebasetutor"
+        tools:targetApi="31">
+        <activity
+            android:name=".inputDetails.AskDisease6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AskDisease5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.AskDisease4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.AskDisease3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.AskDisease2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.AskDisease1"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".routine.Dashboard2"
+            android:exported="false" />
+        <activity
+            android:name=".beginner.beginnerLegCoreD1W6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerLegCoreD1W5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerLegCoreD1W4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerLegCoreD1W3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerLegCoreD1W2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.restWorkoutD2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerLegCoreD1W1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.thankyouStretching"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.stretchingPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workoutModule.intermediateAfterSched"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerWorkoutDone"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.restWorkoutD1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerPushPullD1W2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.beginnerPushPullD1W1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.BeginnerPhase1ScrollBar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.BeginnerPhase1CardioTime"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.BeginnerPhase1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workoutModule.BeginnerAfterSched"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scrolltry"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeginnerOption"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workoutModule.IntermediateAskSched"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workoutModule.BeginnerAskSched"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".editProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tryxml"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".textViewClicked"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.askNumberSched"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".getWeek"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MacrosResultPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".useractivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.RestTimeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.AskName"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginnerChest.beginnerChestWarmUp1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginnerChest.beginnerChestStart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginnerChestPreviewPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediateFullBodyPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediateShoulderPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediateBackPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediateLegPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediateBicepPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediateChestPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.BeginnerBackPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".beginner.BeginnerChestPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intermediate.IntermediatePg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilePg"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+
+
+        </activity>
+        <activity
+            android:name=".MacrosPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NutritionPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workoutModule.WorkoutPg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".inputDetails.Thankyou"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.activityFactor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.askWeight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.askHeight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.askAge"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inputDetails.AskGenderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

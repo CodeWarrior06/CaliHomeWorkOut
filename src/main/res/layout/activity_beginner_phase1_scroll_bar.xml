@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+
+    tools:context=".beginner.BeginnerPhase1ScrollBar">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="match_parent"
+        android:contentDescription="Main scrollable content"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Container Overview -->
+            <LinearLayout
+                android:id="@+id/containerOverview"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/includeStretchOverview"
+                    layout="@layout/reusable_stretching_page"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <!-- Container 1 -->
+            <LinearLayout
+                android:id="@+id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/containerOverview"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/includeStretch1"
+                    layout="@layout/reusable_stretching_page"
+                    />
+
+            </LinearLayout>
+            <!-- Container 1 End -->
+
+            <!-- Container 2 -->
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_red_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/container1"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/includeStretch2"
+                    layout="@layout/reusable_stretching_page"
+                    />
+
+            </LinearLayout>
+            <!-- Container 2 End-->
+
+
+
+            <!-- Container 3 -->
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/container2"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/includeStretch3"
+                    layout="@layout/reusable_stretching_page"
+                    />
+
+            </LinearLayout>
+            <!-- Container 3 End-->
+
+
+
+            <!-- Container 4 -->
+            <LinearLayout
+                android:id="@+id/container4"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/container3"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/includeStretch4"
+                    layout="@layout/reusable_stretching_page"
+                    />
+
+            </LinearLayout>
+            <!-- Container 4 End-->
+
+            <!-- Container 5 -->
+            <LinearLayout
+                android:id="@+id/container5"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/container4"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/includeStretch5"
+                    layout="@layout/reusable_stretching_page"
+                    />
+
+            </LinearLayout>
+            <!-- Container 5 End-->
+
+
+
+
+            <!-- Container 5 -->
+            <LinearLayout
+                android:id="@+id/containerLast"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/container5"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/thankyou_stretching"
+                    layout="@layout/thankyou_stretching"
+                    />
+            </LinearLayout>
+            <!-- Container 5 End-->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

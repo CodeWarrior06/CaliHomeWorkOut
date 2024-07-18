@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/lowCardioPg"
+    tools:context=".beginnerChest.beginnerChestWarmUp1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="start|center"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/askQuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quit"
+                android:textAlignment="textEnd"
+                android:textSize="25sp"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:textStyle="bold"
+                android:background="@drawable/greenbackground_borderradius"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/firstLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/topborderradius_bottomnnoborderradius"
+            android:padding="10dp"
+            android:layout_marginTop="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                >
+                <LinearLayout
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:textAlignment="textEnd"
+                   android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pauseBtn"
+                        android:src="@drawable/pausebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:padding="7dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_weight="0.5"
+
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Warm Up"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_weight="0.1"
+                        android:gravity="center_vertical|end"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- TOP CONTAINER -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:background="@drawable/warmupbeginner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop">
+
+                    </ImageView>
+
+                </androidx.cardview.widget.CardView>
+                
+                
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            <!-- BOTTOM CONTAINER -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+
+                >
+
+                <!--THis is the timer container belong-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/countdown_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+
+                        android:text="Time"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        app:layout_constraintVertical_weight="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/workoutName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+
+                        app:layout_constraintVertical_weight="1"
+                        android:text="WorkoutName"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"
+                       >
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <!--BOTTOM RIGHT SIDE FOR PAUSE AND NEXT-->
+                <LinearLayout
+                    android:id="@+id/skipBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_button_background_pressed"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+                    
+                    <TextView
+                        android:id="@+id/nextBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/skip_shape"
+
+                        >
+
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        <!-- Add your views here -->
+
+         </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
