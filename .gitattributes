@@ -4,3 +4,6 @@
 *.kt text eol=lf
 *.bat text eol=crlf
 *.apk filter=lfs diff=lfs merge=lfs -text
+*.kt linguist-language=kotlin
+*.xml linguist-language=XML
+
